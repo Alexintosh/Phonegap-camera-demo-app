@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="vendors/onsen/css/onsenui.css">
+        <link rel="stylesheet" href="vendors/onsen/css/topcoat-mobile-onsen-ios7.css">
+        <link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/uiProgressButton.js"></script>
+        <script src="cordova.js"></script>
+	<!--
+        <script src="vendors/onsen/js/angular/angular.js"></script>
+        <script src="vendors/onsen/js/angular/angular-touch.js"></script>
+        <script src="vendors/onsen/js/onsenui.js"></script>
+        <script src="js/app.js"></script>
+        -->
+	<script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+	<div class="topcoat-navigation-bar no-select navigator-toolbar relative">	 
+		<div class="onsen_navigator-item onsen_navigator-title topcoat-navigation-bar__title topcoat-navigation-bar__line-height center animate-center">
+		
+		#BRINGBACKVITTORIA
+		</div>
+	</div>
+    <ons-navigator title="A selfie 4 Vittoria">
+        <ons-page class="center" ng-controller="Photo">    
+	<div id="w" data-page="default">
+		<div>
+		
+		</div>
+		<p>
+		Take a photo from your camera<br/>
+		<img id="photo" onclick="capturePhoto()" src="img/camera.png"/>
+		</p>
+		<p>
+		or from your galley<br/>
+		<img id="photo" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);" src="img/gallery.png"/>
+		<br/>
+		</p>
+	</div>
+    	</ons-page>
+    </ons-navigator>
+    <!--
+        <ons-navigator page="nav.html" title="Page 1">
+        </ons-navigator>
+    -->
+    </body>
+</html>
